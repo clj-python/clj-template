@@ -21,7 +21,6 @@ clj -A:new clj-python appcompany.funapp
    
 -   **without** clj-new installed in user deps.edn
    
-   syntax:
 ```bash 
 clj -Sdeps '{:deps {seancorfield/clj-new {:mvn/version "0.8.6"}}}' \
 -m clj-new.create \
