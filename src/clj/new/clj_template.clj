@@ -35,7 +35,7 @@
         (format  "src/%s/python.clj" (:base data))            (render "python.clj" data)}))))
 
 
-(defn libpython-clj [name]
+(defn clj-template [name]
   (libpython-clj-template! name))
 
 (comment
