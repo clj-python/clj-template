@@ -20,11 +20,13 @@
         {base :base} data]
 
     (println (str  "Generating libpython-clj template for "
-                   (:name data) "at") (:sanitized data) ".\n\n"
-             "For the latest information, please check out "
-             "https://github.com/cnuernber/libpython-clj\n"
-             "or join us for discussion at "
-             "https://clojurians.zulipchat.com/#narrow/stream/215609-libpython-clj-dev")
+                   (:name data) " at " (:sanitized data) ".\n\n"
+                   "For the latest information, please check out "
+                   "https://github.com/clj-python/libpython-clj\n"
+                   "or join us for discussion at "
+                   "https://clojurians.zulipchat.com/#narrow/stream/215609-libpython-clj-dev.\n"
+                   "If you run into problems, file a Github issue on the project homepage\nor connect with us at "
+                   "https://clojurians.zulipchat.com/#narrow/stream/215609-libpython-clj-dev/topic/help-wanted"))
 
     (with-bindings {#'clj.new.templates/*force?* force
                     #'clj.new.templates/*dir*    dir}
@@ -35,11 +37,12 @@
         (format  "src/%s/python.clj" (:base data))            (render "python.clj" data)}))))
 
 
-(defn clj-template [arg1 arg2]
-  (println "passed in" arg1 arg2)
-  (libpython-clj-template! arg1))
+(defn clj-python 
+  ([name] (libpython-clj-template! name))
+  ([name & args] (clj-python name)))
 
 (comment
+  (newline)
   (libpython-clj-template!
    "mydomain.myapp"
    :dir "testdir"
