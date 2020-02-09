@@ -10,10 +10,10 @@
 -    **with clj-new installed in user deps.edn**
 
 ```bash 
-    clj -A:new clj-python <mydomain.myapp>
+clj -A:new clj-python <mydomain.myapp>
 
-    ;; example
-    clj -A:new clj-python appcompany.funapp
+;; example
+clj -A:new clj-python appcompany.funapp
 ```
 
    **NOTE**: this assumes you have `clj-new` configured in you `~/.clojure/deps.edn`
@@ -23,12 +23,12 @@
    
    syntax:
 ```bash 
-    clj -Sdeps '{:deps {seancorfield/clj-new {:mvn/version "0.8.6"}}}' \
-    -m clj-new.create \
-    clj-python <mydomain.myapp>
+clj -Sdeps '{:deps {seancorfield/clj-new {:mvn/version "0.8.6"}}}' \
+-m clj-new.create \
+clj-python <mydomain.myapp>
 
-    ;; example
-    clj -Sdeps '{:deps {seancorfield/clj-new {:mvn/version "0.8.6"}}}' \
-    -m clj-new.create \
-    clj-python appcompany.funapp
+;; example
+clj -Sdeps '{:deps {seancorfield/clj-new {:mvn/version "0.8.6"}}}' \
+-m clj-new.create \
+clj-python appcompany.funapp
 ```
