@@ -9,12 +9,10 @@
 
 -    **with clj-new installed in user deps.edn**
 
-    syntax:
 ```bash 
     clj -A:new clj-python <mydomain.myapp>
-```
-    example:
-```bash
+
+    ;; example
     clj -A:new clj-python appcompany.funapp
 ```
 
@@ -28,11 +26,9 @@
     clj -Sdeps '{:deps {seancorfield/clj-new {:mvn/version "0.8.6"}}}' \
     -m clj-new.create \
     clj-python <mydomain.myapp>
-```
-    example:
-```bash 
+
+    ;; example
     clj -Sdeps '{:deps {seancorfield/clj-new {:mvn/version "0.8.6"}}}' \
     -m clj-new.create \
     clj-python appcompany.funapp
 ```
-
