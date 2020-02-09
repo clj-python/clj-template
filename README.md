@@ -5,19 +5,38 @@
 
 ## Usage
 
+* Create from the latest stable template:
 
-* libpython-clj projects can now be created quickly with:
 
+
+* libpython-clj projects can now be created quickly in 2 ways:
+
+    **with clj-new installed in user deps.edn**
+
+    syntax:
 ```bash 
-
-    clj -A:new https://github.com/clj-python/clj-template <project.name>
+    clj -A:new clj-python <mydomain.myapp>
 ```
+    example:
+```bash
+    clj -A:new clj-python appcompany.funapp
+```
+
    **NOTE**: this assumes you have `clj-new` configured in you `~/.clojure/deps.edn`
    profile. If you do not, you can use the following:
    
+   **without clj-new installed in user deps.edn**
+   
+   syntax:
 ```bash 
-clj -Sdeps '{:deps {seancorfield/clj-new {:mvn/version "0.8.6"}}}' \
+    clj -Sdeps '{:deps {seancorfield/clj-new {:mvn/version "0.8.6"}}}' \
     -m clj-new.create \
-	https://github.com/clj-python/clj-template@e24f817a3e804239540b666f8d39f5938a434543 \
-	myname.myapp myname/myapp
+    clj-python <mydomain.myapp>
 ```
+    example:
+```bash 
+    clj -Sdeps '{:deps {seancorfield/clj-new {:mvn/version "0.8.6"}}}' \
+    -m clj-new.create \
+    clj-python appcompany.funapp
+```
+
