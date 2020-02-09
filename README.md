@@ -10,9 +10,9 @@
 -    **with** clj-new [installed](https://github.com/seancorfield/clj-new) in user deps.edn (recommended)
 
 ```bash 
-clj -A:new clj-python <mydomain.myapp>
+clj -A:new clj-python <mydomain.myapp> # don't copy
 
-;; example
+# example
 clj -A:new clj-python appcompany.funapp
 ```
 
@@ -24,9 +24,9 @@ clj -A:new clj-python appcompany.funapp
 ```bash 
 clj -Sdeps '{:deps {seancorfield/clj-new {:mvn/version "0.8.6"}}}' \
 -m clj-new.create \
-clj-python <mydomain.myapp>
+clj-python <mydomain.myapp> # don't copy
 
-;; example
+# example
 clj -Sdeps '{:deps {seancorfield/clj-new {:mvn/version "0.8.6"}}}' \
 -m clj-new.create \
 clj-python appcompany.funapp
