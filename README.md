@@ -5,9 +5,9 @@
 
 ## Usage
 
-* libpython-clj projects can now be created quickly in 2 ways from the latest stable template:
+#### libpython-clj projects can now be created quickly in 2 ways from the latest stable template:
 
-    **with clj-new installed in user deps.edn**
+-    **with clj-new installed in user deps.edn**
 
     syntax:
 ```bash 
@@ -21,7 +21,7 @@
    **NOTE**: this assumes you have `clj-new` configured in you `~/.clojure/deps.edn`
    profile. If you do not, you can use the following:
    
-   **without clj-new installed in user deps.edn**
+-   **without clj-new installed in user deps.edn**
    
    syntax:
 ```bash 
