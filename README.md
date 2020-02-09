@@ -17,6 +17,7 @@
    
 ```bash 
 clj -Sdeps '{:deps {seancorfield/clj-new {:mvn/version "0.8.6"}}}' \
-  -m clj-new.create \
-  https://github.com/clj-python/clj-template <project.name> myname/myapp
+    -m clj-new.create \
+	https://github.com/clj-python/clj-template@e24f817a3e804239540b666f8d39f5938a434543 \
+	myname.myapp myname/myapp
 ```
