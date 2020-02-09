@@ -7,7 +7,7 @@
 
 #### libpython-clj projects can now be created quickly in 2 ways from the latest stable template:
 
--    **with** clj-new [installed](https://github.com/seancorfield/clj-new) in user deps.edn
+-    **with** clj-new [installed](https://github.com/seancorfield/clj-new) in user deps.edn (recommended)
 
 ```bash 
 clj -A:new clj-python <mydomain.myapp>
