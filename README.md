@@ -5,11 +5,7 @@
 
 ## Usage
 
-* Create from the latest stable template:
-
-
-
-* libpython-clj projects can now be created quickly in 2 ways:
+* libpython-clj projects can now be created quickly in 2 ways from the latest stable template:
 
     **with clj-new installed in user deps.edn**
 
