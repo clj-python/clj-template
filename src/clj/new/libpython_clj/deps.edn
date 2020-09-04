@@ -1,11 +1,5 @@
-{
- :mvn/repos {"clojars" {:url "https://repo.clojars.org/"}
+{:mvn/repos {"clojars" {:url "https://repo.clojars.org/"}
              "central" {:url "https://repo1.maven.org/maven2/"}}
-
- :paths ["src" "resources"]
-
- :deps {
-        org.clojure/clojure     {:mvn/version "1.10.1"}
-        cnuernber/libpython-clj {:mvn/version "1.36"}
-        }
- }
+ :paths     ["src" "resources"]
+ :deps      {org.clojure/clojure      {:mvn/version "1.10.1"}
+             clj-python/libpython-clj {:mvn/version "1.46"}}}
