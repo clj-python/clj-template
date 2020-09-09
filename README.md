@@ -15,7 +15,7 @@
 # example
 clj -Sdeps '{:deps {seancorfield/clj-new {:mvn/version "0.8.6"}}}' \
   -m clj-new.create \
-  https://github.com/clj-python/clj-template@2d615fcbea6a5a39321a9e192d3dcee6319719d1 \
+  https://github.com/clj-python/clj-template@050ff3b087afe0e9967d3aa2793b57e422573fdb \
   appcompany.funapp
 ```
 
@@ -24,7 +24,7 @@ clj -Sdeps '{:deps {seancorfield/clj-new {:mvn/version "0.8.6"}}}' \
 ```bash 
 # example
 clj -A:new \
-  https://github.com/clj-python/clj-template@2d615fcbea6a5a39321a9e192d3dcee6319719d1 \
+  https://github.com/clj-python/clj-template@050ff3b087afe0e9967d3aa2793b57e422573fdb \
   appcompany.funapp
 ```
 
