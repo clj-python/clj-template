@@ -1,0 +1,4 @@
+{
+ :hooks {:analyze-call {tech.parallel.utils/export-symbols
+                        hooks.tech.parallel.utils.export-symbols/export-symbols}}
+}

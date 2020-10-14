@@ -1,0 +1,3 @@
+{
+ :config-paths ["configs/libpython-clj" "configs/tech.parallel"]
+}
