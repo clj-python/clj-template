@@ -2,4 +2,4 @@
              "central" {:url "https://repo1.maven.org/maven2/"}}
  :paths     ["src" "resources"]
  :deps      {org.clojure/clojure      {:mvn/version "1.10.1"}
-             clj-python/libpython-clj {:mvn/version "1.46"}}}
+             clj-python/libpython-clj {:mvn/version "2.00-beta-10"}}}
