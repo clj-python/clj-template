@@ -33,6 +33,7 @@
       (file-map->files
        data
        {"deps.edn"                                            (render "deps.edn" data)
+        "cljbridge.py"                                        (render "cljbridge.py" data)
         (format  "src/%s/%s.clj" (:base data) (:suffix data)) (render "core.clj" data)
         (format  "src/%s/python.clj" (:base data))            (render "python.clj" data)}))))
 
