@@ -1,7 +1,7 @@
 (ns {{base}}.{{suffix}}
-    (:require [libpython-clj.python :as py :refer [py. py.- py.. py* py**]]
-              {{base}}.python
-              [libpython-clj.require :refer [require-python import-python]]))
+    (:require [libpython-clj2.python :as py :refer [py. py.- py.. py* py**]]
+              [{{base}}.python]
+              [libpython-clj2.require :refer [require-python import-python]]))
 
 (import-python)
 

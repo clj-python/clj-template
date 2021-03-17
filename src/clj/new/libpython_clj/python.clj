@@ -1,5 +1,5 @@
 (ns {{base}}.python
-    (:require [libpython-clj.python :as py]))
+    (:require [libpython-clj2.python :as py]))
 
 (defn initialize-python!
   ([] (py/initialize!))
@@ -11,5 +11,5 @@
 ;; you bind to below.  Make sure you do this before you call 'require-python'
 ;; in any file.
 
-;; (initialize-python! "/path/to/venv/bin/python")
-(initialize-python! "python3.7")
+;; (initialize-python! "/path/to/env/bin/python")
+(initialize-python! "python3")
