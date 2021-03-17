@@ -1,5 +1,6 @@
 # Libpython-clj clj-template
 
+* https://github.com/clj-python/libpython-clj
 * https://github.com/seancorfield/clj-new
 
 
