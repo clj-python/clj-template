@@ -1,5 +1,5 @@
 (ns {{base}}.python
-    (:require [libpython-clj.python :as py]))
+    (:require [libpython-clj2.python :as py]))
 
 (defn initialize-python!
   ([] (py/initialize!))
@@ -12,4 +12,4 @@
 ;; in any file.
 
 ;; (initialize-python! "/path/to/venv/bin/python")
-(initialize-python! "python3.7")
+(initialize-python! "python3")
