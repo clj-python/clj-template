@@ -30,14 +30,31 @@
 
     (with-bindings {#'clj.new.templates/*force?* force
                     #'clj.new.templates/*dir*    dir}
-      (file-map->files
-       data
-       {"deps.edn"                                            (render "deps.edn" data)
-        (format  "src/%s/%s.clj" (:base data) (:suffix data)) (render "core.clj" data)
-        (format  "src/%s/python.clj" (:base data))            (render "python.clj" data)}))))
+      (let [lpc-path ".clj-kondo/configs/libpython-clj"
+            tp-path ".clj-kondo/configs/tech.parallel"]
+        (file-map->files
+         data
+         {"deps.edn"                                            (render "deps.edn" data)
+          (format  "src/%s/%s.clj" (:base data) (:suffix data)) (render "core.clj" data)
+          (format  "src/%s/python.clj" (:base data))            (render "python.clj" data)
+          ;; clj-kondo hooks related
+          ".clj-kondo/config.edn"
+          (render ".clj-kondo/config.edn" data)
+          ;; libpython_clj
+          (str lpc-path "/config.edn")
+          (render (str lpc-path "/config.edn") data)
+          (str lpc-path "/hooks/libpython_clj/jna/base/def_pylib_fn.clj")
+          (render (str lpc-path "/hooks/libpython_clj/jna/base/def_pylib_fn.clj") data)
+          (str lpc-path "/hooks/libpython_clj/require/import_python.clj")
+          (render (str lpc-path "/hooks/libpython_clj/require/import_python.clj") data)
+          ;; tech.parallel
+          (str tp-path "/config.edn")
+          (render (str tp-path "/config.edn") data)
+          (str tp-path "/hooks/tech/parallel/utils/export_symbols.clj")
+          (render (str tp-path "/hooks/tech/parallel/utils/export_symbols.clj") data)})))))
 
 
-(defn clj-template 
+(defn clj-template
   ([name] (libpython-clj-template! name))
   ([name & args] (clj-template name)))
 
